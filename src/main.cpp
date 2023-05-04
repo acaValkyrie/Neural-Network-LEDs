@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "neural_network.h"
+#include "ShiftRegister.h"
 
 neural_network neural_network;
 
