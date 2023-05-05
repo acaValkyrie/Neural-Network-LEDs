@@ -11,16 +11,14 @@ void setup() {
   nn.set_all_neuron_dt(0.001);
   shift_register.setup();
   time_before_ms = millis();
-  Serial.begin(9600);
 }
 
 void loop() {
   // set delta t
-  int delta_t_ms = millis() - time_before_ms;
-  time_before_ms = millis();
-  nn.set_all_neuron_dt(0.001);
-  Serial.println(delta_t_ms);
-
+  //int delta_t_ms = millis() - time_before_ms;
+  //time_before_ms = millis();
+  //nn.set_all_neuron_dt(0.001);
+  
   // compute
   nn.compute_neural_network();
   
